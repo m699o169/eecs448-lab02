@@ -40,10 +40,20 @@ bool LinkedList<T>::search(T value) const
 	bool isFound = false;
 
 	/** TODO 
-		Fix this method
+		FIXED
 	*/
 
-	
+	for (int i = 0; i < size(); i++)
+	{
+		if (value == temp-> getValue())
+		{
+			isFound = true;
+		}
+		else
+		{
+			temp = temp->getNext();
+		}
+	}
 	return(isFound);
 }
 
